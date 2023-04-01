@@ -9,53 +9,102 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Wow -->
+    <link rel="stylesheet" href="./js/WOW-master/css/libs/animate.css">
+
     <!-- Style -->
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Hello, world!</title>
+    <link rel=" stylesheet" href="./css/style.css">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <title>Capstone</title>
 </head>
 
 <body>
-    <!-- Header + Carousel -->
+    <!-- Header + Carousel: Phong-->
     <header></header>
 
     <main>
-        <!-- Section 1: About US -->
-        <section id="About"></section>
+        <!-- Section 1: About US: Phong -->
+        <section id="about"></section>
 
-        <!-- Section 2: Intro -->
-        <section id="Intro"></section>
+        <!-- Section 2: Intro: Giang -->
+        <section id="intro"></section>
 
-        <!-- Section 3: Categories -->
-        <section id="Categories"></section>
+        <!-- Section 3: Categories: Giang -->
+        <section id="categories"></section>
 
-        <!-- Section 4: Services -->
-        <section id="Service"></section>
+        <!-- Section 4: Services: QAnh -->
+        <section id="services"></section>
 
-        <!-- Section 5: Count -->
-        <section id="Count"></section>
+        <!-- Section 5: Count: QAnh -->
+        <section id="count"></section>
 
-        <!-- Section 6: Blog -->
-        <section id="blog"></section>
+        <!-- Section 6: Blogs: Giang -->
+        <section id="blogs"></section>
 
-        <!-- Section 7: Testimonials -->
+        <!-- Section 7: Testimonials: Giang -->
         <section id="testimonials"></section>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer: QAnh -->
     <footer></footer>
 
-    <!-- Optional JavaScript -->
+    <!-- JavaScript Libs: -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- Magnific-Popup -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+        integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+    <!-- Jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
+
+    <!-- CountUp -->
+    <script src="./js/countupjs/jquery.countup.min.js"></script>
+
+    <!-- Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
+
+    <!--  Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <!-- CountUp Script -->
+    <script src="./js/countup/jquery.countup.min.js"></script>
+
+    <!-- waypoint -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        // countup script
+        $('.counter').countUp({});
+
+        // Wow Script
+        new WOW().init();
+    </script>
+
 </body>
 
 </html>

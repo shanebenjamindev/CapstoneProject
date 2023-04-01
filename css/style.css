@@ -1,5 +1,46 @@
+/* Font */
+html,
+body {
+    /* font-family: 'Quicksand', 'Pacifico', -apple-system; */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
 /* Variable */
-:root{
+:root {
     --primary-color: rgb(255, 102, 0);
     /* --secondary-color: ; */
 }
+
+/* Header : Phong */
+header {}
+
+/* Main */
+/* section 1: About : Phong */
+#about {}
+
+/* section 2: Intro : Giang */
+#intro {}
+
+/* section 3: Categories : Giang */
+#categories {}
+
+/* section 3: Services : QAnh */
+#services {}
+
+/* section 3: Count : QAnh */
+#count {}
+
+/* section 3: Blogs : Giang */
+#blogs {}
+
+/* section 3: Testimonials : Giang */
+#testimonials {}
+
+/* Footer : QAnh */
+footer {}
