@@ -14,13 +14,14 @@ body {
 :root {
   --primary-color: rgb(255, 102, 0);
   --secondary-color: #ffc600;
-  --heading-color: #232121;;
+  --heading-color: #232121;
+  --bg-light: rgba(130, 115, 252, 0.05);
+  --font-color: rgba(22, 28, 45, 0.7);
+  --border-color: transparent;
+  --border-color-light: #eee;
 }
 
 /* Common */
-.container {
-  max-width: 1200px;
-}
 
 .common__Title h6 {
   font-size: 20px;
@@ -125,6 +126,86 @@ header {
 
 /* section 3: Services : QAnh */
 #services {
+  background-color: #fff;
+}
+
+.services__item {
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid var(--border-color-light);
+  border-radius: 8px;
+  box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+  transition: all 0.3s linear;
+}
+
+.services__item:hover {
+  box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
+}
+
+.services__item-heading {
+  display: flex;
+  align-items: center;
+  gap: 0 30px;
+}
+
+.services__icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-light);
+  border-radius: 8px;
+  transition: all 0.5s linear;
+}
+
+.services__item:hover .services__icon {
+  background-color: var(--primary-color);
+}
+
+.services__icon span {
+  transition: all 0.5s linear;
+  font-size: 25px;
+  color: var(--primary-color);
+}
+
+.services__item:hover .services__icon span {
+  color: #fff;
+}
+
+.services__title p {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.services__title h3 a {
+  color: #000;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  transition: all 0.2s linear;
+}
+
+.services__title h3 a:hover {
+  color: var(--primary-color);
+}
+
+.services__item .desc {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--font-color);
+  font-family: "Quicksand", sans-serif;
+}
+
+@media screen and (max-width: 1080px) {
+  .services__title h3 a {
+    font-size: 20px;
+  }
 }
 
 /* section 3: Count : QAnh */
