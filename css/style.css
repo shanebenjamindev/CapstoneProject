@@ -46,13 +46,23 @@ h6 {
 :root {
   --primary-color: #ff6600;
   --secondary-color: #ffc600;
-  --heading-color: #232121;;
+  --heading-color: #232121;
+  --font-color: rgba(22, 28, 45, 0.7);
+  --bg-color: #fff;
+  --border-radius: 6px;
+  --border-radius-full: 35px;
+  --border-color: transparent;
+  --border-color-light: #eee;
+  --nav-color: #232121;
+  --dropdown-color: #fff;
+  --iframe-filter: grayscale(0%);
+  --bg-light: rgba(130, 115, 252, 0.05);
+  --bg-grey: #f7f7f7;
+  --footer-bg: #000;
+  --card-bg: #fff;
 }
 
 /* Common */
-.container {
-  max-width: 1200px;
-}
 
 .common__Title h6 {
   font-size: 20px;
