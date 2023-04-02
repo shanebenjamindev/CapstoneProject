@@ -1,46 +1,201 @@
 /* Font */
 html,
 body {
-    /* font-family: 'Quicksand', 'Pacifico', -apple-system; */
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
+  font-family: "Quicksand", "Pacifico", -apple-system;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
 }
 
 /* Variable */
 :root {
-    --primary-color: rgb(255, 102, 0);
-    /* --secondary-color: ; */
+  --primary-color: rgb(255, 102, 0);
+  --secondary-color: #ffc600;
+  --heading-color: #232121;;
+}
+
+/* Common */
+.container {
+  max-width: 1200px;
+}
+
+.common__Title h6 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+  display: block;
+  font-family: "Pacifico", cursive;
+}
+
+.common__Title h3 {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
 }
 
 /* Header : Phong */
-header {}
+header {
+}
 
 /* Main */
 /* section 1: About : Phong */
-#about {}
+#about {
+}
 
 /* section 2: Intro : Giang */
-#intro {}
+#intro {
+  min-height: 600px;
+}
 
+.intro__Left {
+  background-image: url("../img/banner3.jpg");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.intro__Right {
+  background-color: var(--primary-color);
+}
 /* section 3: Categories : Giang */
-#categories {}
+#categories .categories__Item {
+}
+
+.categories__ItemImg {
+  transition: all 0.4s;
+  position: relative;
+}
+
+.categories__ItemImg::after {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  content: " ";
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0.53) 69%,
+    rgba(0, 0, 0, 0.76) 100%
+  );
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -moz-border-radius: 6px;
+}
+
+.categories__ItemImg:hover {
+  opacity: 0.85;
+}
+
+.categories__ItemInfo {
+  position: absolute;
+  bottom: -25px;
+  width: 92%;
+  left: auto;
+}
+
+.categories__ItemInfo h4 {
+  font-size: 22px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.categories__ItemInfo h6 {
+  font-weight: 600;
+  color: var(--secondary-color);
+  font-size: 18px;
+  letter-spacing: 1px;
+}
 
 /* section 3: Services : QAnh */
-#services {}
+#services {
+}
 
 /* section 3: Count : QAnh */
-#count {}
+#count {
+}
 
 /* section 3: Blogs : Giang */
-#blogs {}
+.receipe__Btn {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 3px 20px;
+  border-radius: 35px;
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: inline-block;
+  letter-spacing: 0.05em;
+}
+
+.blogs__BtnTime {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+}
+
+.blogs__ImgAnchor {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: block;
+  overflow: hidden;
+}
+
+.blogs__Des {
+  display: block;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-top: 25px;
+  margin-bottom: 15px;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+.card,
+.card-body,
+.card-footer {
+  background-color: #ffff;
+  border: none;
+}
+
+.card-bodyfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blogs__AnchorInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 /* section 3: Testimonials : Giang */
-#testimonials {}
+#testimonials {
+}
 
 /* Footer : QAnh */
-footer {}
+footer {
+}
