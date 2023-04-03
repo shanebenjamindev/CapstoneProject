@@ -101,19 +101,23 @@ header {
 }
 
 /* section 2: Intro : Giang */
-#intro {
+#intro{
+  background-color: var(--primary-color);
+}
+
+.intro__LeftImg {
+  background: url(../img/banner3.jpg) no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  position: relative;
+  z-index: 1;
   min-height: 600px;
 }
 
-.intro__Left {
-  position: relative;
-  background-image: url("../img/banner3.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.intro__Left::before {
+.intro__LeftImg::before {
   content: "";
   background: rgb(16 15 19 / 46%);
   position: absolute;
@@ -480,7 +484,23 @@ blockquote q::after {
 footer {
 }
 
-@media screen and (min-width: 1280px) {
+/* RESPONSIVE */
+/* moblie: width < 740px */
+@media screen and (max-width: 739px) {
+  .intro__LeftImg {
+    min-height: 200px;
+  }
+}
+
+/* tablet: 740<= width < 1024 */
+@media screen and (min-width: 740px) and (max-width: 1024px) {
+  .intro__Left {
+    min-height: 200px;
+  }
+}
+
+/* pc: width >= 1024px */
+@media screen and (min-width: 1025px) {
   .container {
     max-width: 1200px;
   }
