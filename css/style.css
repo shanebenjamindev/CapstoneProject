@@ -130,9 +130,8 @@ header {
   background-color: var(--primary-color);
 }
 
-.intro__RightContent .common__Title h6,
-p {
-  color: var(--font-color);
+.intro__RightTitle h6 {
+  color: white;
 }
 
 .intro__RightContent {
@@ -146,6 +145,16 @@ p {
   background: white;
   line-height: 70px;
   border-radius: 6px;
+}
+
+.intro__RightItem h6,
+p {
+  color: #ffdfc9;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Quicksand", sans-serif;
 }
 
 .intro__RightItem span {
