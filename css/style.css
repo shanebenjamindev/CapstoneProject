@@ -170,7 +170,8 @@ p {
 }
 
 /* section 3: Categories : Giang */
-#categories .categories__Item {
+#categories {
+  background-color: var(--bg-grey);
 }
 
 .categories__ItemImg {
@@ -397,7 +398,73 @@ p {
 }
 
 /* section 3: Testimonials : Giang */
-#testimonials {
+#testimonials .testimonials__Content {
+  max-width: 700px;
+  margin: auto;
+}
+
+#testimonials img {
+  left: 0px;
+  top: 0px;
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+#testimonials p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--font-color);
+  font-family: "Quicksand", sans-serif;
+}
+
+#testimonials .testimonials__Content h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#testimonials .testimonials__ItemIndentity {
+  font-size: 18px;
+  font-style: normal;
+  margin-bottom: 0;
+  text-align: left;
+  opacity: 0.8;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+#testimonials blockquote {
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--heading-color);
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+blockquote q::before {
+  font-size: 50px;
+  color: var(--primary-color);
+  display: block;
+  font-family: initial;
+}
+
+blockquote q::after {
+  content: close-quote;
+}
+
+.owl-dots .active span,
+.owl-dot:hover span {
+  background: var(--primary-color) !important;
+  transition: none !important;
+  opacity: 1 !important;
 }
 
 /* Footer : QAnh */
