@@ -39,7 +39,7 @@
       rel="stylesheet"
     />
 
-    <!-- Animation -->
+    <!-- Animate -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -64,11 +64,15 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- fancybox -->
+    <!-- fancy-box -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="./libs/Magnific-Popup/magnific-popup.css" />
+
     <!-- Style -->
     <link rel=" stylesheet" href="./css/style.css" />
     <title>Capstone</title>
@@ -382,7 +386,7 @@
                 <p class="stats__label">Food Items</p>
               </div>
             </div>
-            <div class="col-6 col-md-3 stats__col">
+            <div class="col-6 col-md-3 stats__col mt-4 mt-md-0">
               <div class="stats__item">
                 <div class="stats__icon">
                   <i class="fa-solid fa-users"></i>
@@ -391,7 +395,7 @@
                 <p class="stats__label">Chefs</p>
               </div>
             </div>
-            <div class="col-6 col-md-3 stats__col">
+            <div class="col-6 col-md-3 stats__col mt-4 mt-md-0">
               <div class="stats__item">
                 <div class="stats__icon">
                   <i class="fa-regular fa-face-smile"></i>
@@ -399,6 +403,32 @@
                 <p class="stats__num counter">2,560</p>
                 <p class="stats__label">Happy Customers</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video -->
+      <section class="video py-5">
+        <div class="container video__container py-0 py-lg-5">
+          <div class="video__thumb">
+            <a
+              href="#small-dialog"
+              class="video__icon open-popup-link popup-with-zoom-anim"
+            >
+              <i class="fa-solid fa-play video__play"></i>
+            </a>
+            
+            <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/SmxwRu5T61w"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
         </div>
@@ -716,18 +746,6 @@
       src="https://code.jquery.com/jquery-1.11.0.min.js"
     ></script> -->
 
-    <!-- Magnific-Popup -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
-      integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-
     <!-- Slick -->
     <script
       type="text/javascript"
@@ -769,8 +787,8 @@
     <!-- countup script -->
     <script>
       $(".counter").countUp({
-        'time': 2000,
-        'delay': 10
+        time: 2000,
+        delay: 10,
       });
     </script>
 
@@ -799,6 +817,28 @@
     <!-- Wow Script -->
     <script>
       new WOW().init();
+    </script>
+
+    <!--Magnific Popup  -->
+    <script src="./libs/Magnific-Popup/jquery.magnific-popup.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".popup-with-zoom-anim").magnificPopup({
+          type: "inline",
+
+          fixedContentPos: false,
+          fixedBgPos: true,
+
+          overflowY: "auto",
+
+          closeBtnInside: true,
+          preloader: false,
+
+          midClick: true,
+          removalDelay: 300,
+          mainClass: "my-mfp-zoom-in",
+        });
+      });
     </script>
   </body>
 </html>
