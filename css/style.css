@@ -412,6 +412,67 @@ header {
     }
 }
 
+/* Stats */
+#stats{
+    margin-top: -70px;
+}
+
+.stats__item{
+    background-color: var(--bg-color);
+    padding: 40px 20px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    transition: all .3s linear;
+    box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+}
+
+.stats__item:hover{
+    transform: translateY(-0.25rem);
+    box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px, rgba(71, 63, 79, 0.16) 0px 5px 10px;
+}
+
+.stats__icon{
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    font-size: 26px;
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    color: #fff;
+    text-align: center;
+    line-height: 68px;
+}
+
+.stats__num{
+    margin-top:16px ;
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: var(--heading-color);
+    transition: all .5s;
+}
+
+.stats__label{
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 28px;
+    color: var(--font-color);
+}
+
+@media screen and (max-width: 640px) {
+    .stats__num{
+    font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:991.98px){
+    #stats{
+        margin-top: 0;
+    }
+}
+
+
+
 /* section 3: Blogs : Giang */
 #blogs,
 .card,
