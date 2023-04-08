@@ -816,10 +816,40 @@ blockquote q::after {
   width: 100%;
 }
 
+.cpr__desc {
+  font-size: 17px;
+  color: #ddd;
+}
+
+.cpr__w3 {
+  color: var(--primary-color);
+  transition: all 0.3s;
+}
+
+.cpr__w3:hover {
+  color: #fff;
+}
+
+.cpr__link {
+  font-size: 17px;
+  line-height: 26px;
+  color: #a5a2a1;
+  transition: all 0.3s;
+}
+
+.cpr__link:hover {
+  color: var(--primary-color);
+}
+
 @media screen and (max-width: 991.98px) {
   .footer__title {
     font-size: 20px;
     margin-bottom: 20px;
+  }
+
+  .cpr__desc{
+    text-align: center;
+    margin-bottom: 0;
   }
 
   .footer__social {
