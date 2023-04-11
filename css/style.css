@@ -1048,6 +1048,31 @@ blockquote q::after {
     text-align: center;
   }
 }
+/* Back to top */
+.backToTop__btn{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  transition: all 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.cd-top--is-visible { 
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out { 
+  opacity: .5;
+}
 
 /* Animation */
 @keyframes ripple {
