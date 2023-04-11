@@ -64,6 +64,42 @@ p {
   --card-bg: #fff;
 }
 
+/* Dark mode - QAnh */
+.dark-mode {
+  --primary-color: #ff6600;
+  --secondary-color: #ffc600;
+  --font-color: #c2d0da;
+  --bg-color: #232220;
+  --heading-color: #eee;
+  --border-color: rgba(255, 255, 255, 0.2);
+  --border-color-light: rgba(255, 255, 255, 0.1);
+  --nav-color: #fff;
+  --dropdown-color: #121725;
+  --iframe-filter: grayscale(100%);
+  --bg-light: #282828;
+  --bg-grey: #282828;
+  --card-bg: #888c96;
+  --footer-bg: #000;
+}
+
+#switch-mode {
+  background-color: transparent;
+  border: none;
+}
+
+#switch-mode #sun{
+  display: none;
+}
+
+.dark-mode #switch-mode #sun{
+display: inline-block;
+}
+
+.dark-mode #switch-mode #moon{
+  display: none;
+}
+
+
 /* Common */
 .common__Title h6 {
   font-size: 20px;
@@ -168,7 +204,7 @@ header .header__content {
   right: 20px;
   font-size: 15px;
   top: 15px;
-
+  color: var(--font-color);
 }
 
 .header__right .button__nav .buttom__overlay {
@@ -181,6 +217,8 @@ header .header__content {
 }
 
 .header__right .lightOrdark__nav i {
+  display: inline-block;
+  width: 20px;
   font-size: 1.7rem;
   color: white;
 }
@@ -229,7 +267,9 @@ header .header__content {
 
 /* Main */
 /* section 1: About : Phong */
-#about {}
+#about {
+  background-color: var(--bg-color);
+}
 
 #about .content__left .title__h6 {
   font-size: 20px;
@@ -238,7 +278,7 @@ header .header__content {
   letter-spacing: 1px;
   color: var(--primary-color);
   display: block;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
 }
 
 #about .content__left .title__h3 {
@@ -251,7 +291,7 @@ header .header__content {
   font-size: 18px;
   line-height: 28px;
   color: var(--font-color);
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 /* section 2: Intro : Giang */
@@ -357,10 +397,12 @@ header .header__content {
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-  background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0) 0,
-      rgba(0, 0, 0, 0.53) 69%,
-      rgba(0, 0, 0, 0.76) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0.53) 69%,
+    rgba(0, 0, 0, 0.76) 100%
+  );
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -549,6 +591,7 @@ header .header__content {
 /* Stats */
 #stats {
   margin-top: -70px;
+  background-color: var(--bg-color);
 }
 
 .stats__item {
@@ -607,6 +650,11 @@ header .header__content {
 }
 
 /* Video */
+
+.video{
+  background-color: var(--bg-color);
+}
+
 .video__thumb {
   position: relative;
   min-height: 500px;
@@ -794,6 +842,10 @@ div#small-dialog iframe {
 }
 
 /* section 3: Testimonials : Giang */
+#testimonials{
+  background-color: var(--bg-color);
+}
+
 #testimonials .testimonials__Content {
   max-width: 700px;
   margin: auto;
