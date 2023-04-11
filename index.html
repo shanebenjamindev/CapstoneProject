@@ -46,7 +46,7 @@
   <title>Capstone</title>
 </head>
 
-<body>
+<body id="body">
   <!-- Header + Carousel: Phong-->
   <header>
     <div class="container">
@@ -67,7 +67,10 @@
 
           <div class="lightOrdark__nav">
             <nav class="navigation text-center">
-              <i class="fa-regular fa-moon"></i>
+              <button id="switch-mode">
+                <i id="moon" class="fa-regular fa-moon" ></i>
+                <i id="sun" class="fa-solid fa-sun" ></i>
+                </button>
             </nav>
           </div>
 
@@ -855,6 +858,9 @@
       });
     });
   </script>
+
+  <!-- Main JS -->
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
