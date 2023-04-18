@@ -87,15 +87,15 @@ p {
   border: none;
 }
 
-#switch-mode #sun{
+#switch-mode #sun {
   display: none;
 }
 
-.dark-mode #switch-mode #sun{
-display: inline-block;
+.dark-mode #switch-mode #sun {
+  display: inline-block;
 }
 
-.dark-mode #switch-mode #moon{
+.dark-mode #switch-mode #moon {
   display: none;
 }
 
@@ -223,6 +223,61 @@ header .header__content {
   color: white;
 }
 
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+  background: rgb(6 3 0 / 77%);
+}
+
+.overlay__scale {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay .overlay__close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  overflow: hidden;
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.overlay .overlay__menu {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.overlay__menu ul a li {
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  color: #fff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  margin: 20px 0;
+}
+
+.overlay__open {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.4s, opacity 0.4s;
+  z-index: 2;
+}
+
+/* BANNER */
 .banner {
   background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),
     url("./../img/banner1.jpg");
@@ -397,12 +452,10 @@ header .header__content {
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0,
-    rgba(0, 0, 0, 0.53) 69%,
-    rgba(0, 0, 0, 0.76) 100%
-  );
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 0,
+      rgba(0, 0, 0, 0.53) 69%,
+      rgba(0, 0, 0, 0.76) 100%);
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -651,7 +704,7 @@ header .header__content {
 
 /* Video */
 
-.video{
+.video {
   background-color: var(--bg-color);
 }
 
@@ -842,7 +895,7 @@ div#small-dialog iframe {
 }
 
 /* section 3: Testimonials : Giang */
-#testimonials{
+#testimonials {
   background-color: var(--bg-color);
 }
 
@@ -1048,8 +1101,9 @@ blockquote q::after {
     text-align: center;
   }
 }
+
 /* Back to top */
-.backToTop__btn{
+.backToTop__btn {
   position: fixed;
   bottom: 25px;
   right: 25px;
@@ -1065,12 +1119,12 @@ blockquote q::after {
   opacity: 0;
 }
 
-.cd-top--is-visible { 
+.cd-top--is-visible {
   visibility: visible;
   opacity: 1;
 }
 
-.cd-top--fade-out { 
+.cd-top--fade-out {
   opacity: .5;
 }
 
