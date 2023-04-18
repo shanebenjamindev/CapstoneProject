@@ -99,7 +99,6 @@ p {
   display: none;
 }
 
-
 /* Common */
 .common__Title h6 {
   font-size: 20px;
@@ -419,6 +418,7 @@ header .header__content {
 }
 
 .intro__RightItem h6,
+p,
 .intro__RightItem p {
   color: #ffdfc9;
   margin: 0;
@@ -447,6 +447,7 @@ header .header__content {
   line-height: 1.2;
   margin-bottom: 15px;
   font-size: 20px;
+  font-family: "Quicksand", sans-serif;
 }
 
 /* section 3: Categories : Giang */
@@ -457,6 +458,17 @@ header .header__content {
 .categories__ItemImg {
   transition: all 0.4s;
   position: relative;
+}
+
+.categories__ItemImg img{
+      display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+    -moz-border-radius: 6px;
 }
 
 .categories__ItemImg::after {
@@ -470,10 +482,12 @@ header .header__content {
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-  background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0) 0,
-      rgba(0, 0, 0, 0.53) 69%,
-      rgba(0, 0, 0, 0.76) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0.53) 69%,
+    rgba(0, 0, 0, 0.76) 100%
+  );
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -1143,7 +1157,7 @@ blockquote q::after {
 }
 
 .cd-top--fade-out {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 /* Animation */
@@ -1165,12 +1179,62 @@ blockquote q::after {
   .intro__LeftImg {
     min-height: 200px;
   }
+  .content__right p {
+    font-size: 16px !important;
+    line-height: 26px !important;
+  }
+  .title__h3 {
+    font-size: 24px !important;
+    line-height: 34px !important;
+  }
+  .common__Title h3 {
+    font-size: 24px !important;
+    line-height: 34px;
+  }
+  .common__Title h6 {
+    font-size: 16px !important;
+    letter-spacing: 0.5px;
+  }
+
+  /* responsive__category */
+  .categories__ItemInfo h4 {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 25px;
+    opacity: 0.9;
+  }
+
+  .categories__ItemInfo h6 span {
+    font-size: 16px;
+    line-height: 25px;
+    opacity: 0.9;
+  }
 }
 
 /* tablet: 740<= width < 1024 */
 @media screen and (min-width: 740px) and (max-width: 1024px) {
+  .intro__LeftImg {
+    min-height: 200px;
+  }
   .intro__Left {
     min-height: 200px;
+  }
+  .common__Title h3 {
+    font-size: 32px !important;
+    line-height: 40px;
+  }
+
+  .categories__ItemInfo h4 {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 25px;
+    opacity: 0.9;
+  }
+
+  .categories__ItemInfo h6 span {
+    font-size: 16px;
+    line-height: 25px;
+    opacity: 0.9;
   }
 }
 
