@@ -250,6 +250,11 @@ header .header__content {
   border: none;
   background: var(--primary-color);
   color: #fff;
+  border-radius: var(--border-radius);
+}
+
+.overlay__close:active {
+  border: 3px solid white;
 }
 
 .overlay .overlay__menu {
@@ -259,7 +264,7 @@ header .header__content {
   transform: translateY(-50%);
 }
 
-.overlay__menu ul a li {
+.overlay__menu ul li a {
   font-size: 20px;
   font-weight: 600;
   display: block;
@@ -267,6 +272,19 @@ header .header__content {
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
   margin: 20px 0;
+}
+
+.overlay__menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+
+.overlay__menu ul a:hover {
+  color: var(--primary-color) !important;
 }
 
 .overlay__open {
