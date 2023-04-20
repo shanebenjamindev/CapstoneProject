@@ -62,6 +62,7 @@ p {
   --bg-grey: #f7f7f7;
   --footer-bg: #000;
   --card-bg: #fff;
+  --font-family: 'Quicksand', sans-serif;
 }
 
 /* Dark mode - QAnh */
@@ -854,6 +855,7 @@ div#small-dialog iframe {
 .card-footer {
   background-color: var(--bg-grey);
   border: none;
+  font-family: var(--font-family);
 }
 
 .card-body p {
