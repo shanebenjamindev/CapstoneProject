@@ -1,5 +1,3 @@
-/* Reset */
-
 html,
 body {
   box-sizing: border-box;
@@ -576,6 +574,7 @@ p,
   margin-bottom: 0;
   font-size: 18px;
   font-family: "Quicksand", sans-serif;
+  color: var(--font-color);
 }
 
 .services__title h3 a {
