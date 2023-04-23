@@ -707,7 +707,7 @@ p,
 }
 
 .stats__num {
-  margin-top: 16px;
+  margin-top: 32px;
   font-size: 2.6rem;
   font-weight: 600;
   color: var(--heading-color);
@@ -715,6 +715,7 @@ p,
 }
 
 .stats__label {
+  margin-top: 16px;
   margin-bottom: 0;
   font-weight: 600;
   font-size: 1.1rem;
